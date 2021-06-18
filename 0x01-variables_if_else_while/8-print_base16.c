@@ -1,25 +1,15 @@
 #include <stdio.h>
-
 /**
- *main - Prints decimal digits
- *
- *Description: Prints decimal digits
- *and followed by a new line
- *Return: 0
-*/
+ * main - prints out all the numbers of base 16 in lowercase
+ * Return: 0
+ */
 int main(void)
 {
-	int i;
-
-	for (i = 48; i <= 57; i++)
-	{
-		putchar(i);
-		if (i <= 56)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-	}
-	putchar('\n');
-	return (0);
+int i;
+for (i = 48; i < 58; i++)
+putchar(i);
+for (i = 'a'; i <= 'f'; i++)
+putchar(i);
+putchar('\n');
+return (0);
 }
