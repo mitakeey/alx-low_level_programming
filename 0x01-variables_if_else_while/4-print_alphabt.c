@@ -3,7 +3,7 @@
 /**
  *main - Prints decimal digits
  *
- *Description: Prints decimal digits
+ *Description: Prints decimal digits followed by a new line
  *Return: 0
 */
 int main(void)
