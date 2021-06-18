@@ -1,19 +1,19 @@
 #include <stdio.h>
-
 /**
- *main - Prints decimal digits
- *
- *Description: Prints decimal digits followed by a new line
- *Return: 0
+* main - program entry point
+* Return: returns nothing
 */
 int main(void)
 {
-	int i;
-
-	for (i = 0; i <= 9; i++)
-	{
-		printf("%d", i);
-	}
-	putchar('\n');
-	return (0);
+char c = 'a';
+while (c <= 'z')
+{
+if ((c != 'e') && (c != 'q'))
+{
+putchar(c);
+}
+c++;
+}
+putchar('\n');
+return (0);
 }
