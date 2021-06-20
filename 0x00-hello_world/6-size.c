@@ -3,18 +3,20 @@
 *main - to print text
 *Return: 0
 */
+
 int main(void)
 {
-int intType;
-float floatType;
-long longType;
-long long int longlongType;
 char charType;
+int intType;
+long longType;
+long long loongType;
+float floatType;
 
-printf("Size of int: %zu bytes\n", sizeof(intType));
-printf("Size of float: %zu bytes\n", sizeof(floatType));
-printf("Size of long int: %zu bytes\n," sizeof(longType)));
-printf("Size of long long int: %zu bytes\n", sizeof(longlongType));
-printf("Size of char: %zu byte\n", sizeof(charType));
+printf("Size of a char: %zu byte(s)\n", sizeof(charType));
+printf("Size of a int: %zu byte(s)\n", sizeof(intType));
+printf("Size of a long: %zu byte(s)\n", sizeof(longType));
+printf("Size of a long long int: %zu byte(s)\n", sizeof(loongType));
+printf("Size of a float: %zu byte(s)\n", sizeof(floatType));
 return (0);
+  
 }
