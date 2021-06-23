@@ -1,9 +1,15 @@
+#include "holberton.h"
+
 /**
-* main - check the code for ALX School students.
+* main - Entry point
 *
-* Return: Always 0.
+* Description: check the code for ALX School students
+*
+* Return: Always 0 (Success)
 */
+
 int main(void)
 {
 print_alphabet();
 return (0);
+}
