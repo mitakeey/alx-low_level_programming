@@ -1,18 +1,22 @@
-#include "holberton.h"
+#include"holberton.h"
 /**
-* main - Entry block
-* Description: prints holberton in a new line
-* Return: 0
+* main - Entry point
+*
+* Description: prints Holberton
+*
+* Return: Always 0 (Success)
 */
+
 int main(void)
 {
-char a[10] = "Holberton";
-int a = i;
+char str[] = "Holberton";
+int i = 0;
+ 
 while (i < 9)
 {
-_putchar("a[i]");
+_putchar(str[i]);
 i++;
-_putchar("\n");
 }
+_putchar('\n');
 return (0);
 }
