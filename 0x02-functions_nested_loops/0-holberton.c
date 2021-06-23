@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "HOLBERTON.H"
 /**
 * main - Entry block
 * Description: prints holberton in a new line
