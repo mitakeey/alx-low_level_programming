@@ -8,21 +8,20 @@
 
 void print_alphabet_x10(void)
 {
-	char ch;
-	int i = 1;
+char ch;
+int i = 1;
 
-	/*print alphabet a - z ten time*/
-	do {
-		/*print alphabet a - z*/
-		for (ch = 'a'; ch <= 'z'; ch++)
-		{
-			_putchar(ch);
-		}
+do {  
 
-		_putchar('\n');
+for (ch = 'a'; ch <= 'z'; ch++)
+{
+_putchar(ch);
+}
 
-		i++;
+_putchar('\n');
 
-	} while (i <= 10);
+i++;
+
+} while (i <= 10);
 
 }
