@@ -1,17 +1,15 @@
 #include "holberton.h"
 /**
-* main - check the code for ALX School students.
-*
-* Return: 1 on success
+* print_alphabet - entry point
+* Description: Prints the alphabet with putchar
+* Return: void
 */
 void print_alphabet(void)
 {
-char alf;
-
-for (alf = 'a'; alf <= 'z'; alf++)
+char b;
+for (b = 'a'; b <= 'z'; b++)
 {
-_putchar(alf);
+_putchar(b);
 }
-
 _putchar('\n');
 }
