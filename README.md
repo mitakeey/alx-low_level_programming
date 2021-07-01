@@ -1,1 +1,1 @@
-#This is a C-programming project
+# This is an extended pointers, arrays and strings project
