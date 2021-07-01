@@ -16,5 +16,5 @@ for(j = 0; scr!='\0'; j++, i++)
 dest[i] = scr[j];
 }
 dest[i] = '\0';
-return (0);
+return (dest);
 }
