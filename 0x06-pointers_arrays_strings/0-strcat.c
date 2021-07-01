@@ -9,13 +9,15 @@
  */
 
 char *_strcat(char *dest, char *src)
-
-for (omosh = 0; dest != '\0'; omosh++)
 {
-for (kizangila = 0; scr != '\0'; kizangila++)
+int i, j;
+for (i = 0; dest[i] != '\0'; i++)
 {
-dest[omosh + kizangila] = scr[kizangila];
+for (j = 0; scr[j] != '\0'; j++)
+{
+dest[i + j] = scr[j];
 }
-dest[omosh] = '\0';
+dest[i] = '\0';
 return (dest);
+}
 }
