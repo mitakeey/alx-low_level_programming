@@ -1,22 +1,20 @@
-#include <stdio.h>
-#include <holberton.h>
+#include "holberton.h"
+
 /**
- * simple_print_buffer - prints buffer in hexa
- * @s: the pointer to be filled with s
- * @b: the address of memory to print
- * @n: the size of the memory to print
+ * _memset - fills memory with a constant byte
+ * @s: memory space to be filled
+ * @b: byte to fill with
+ * @n: number of spaces to fill
  *
- * Return: Nothing.
+ * Return: pointer to memory area s
  */
-char *_memset(char *s, char b, unsigned int i);
+char *_memset(char *s, char b, unsigned int n)
 {
-unsigned int i;
+	unsigned int i;
 
-for (i = 0; i < n; i++)
-
-{
-*s[i] = b;
-
-}
-return (s);
+	for (i = 0; i < n; i++)
+	{
+		*(s + i) = b;
+	}
+	return (s);
 }
