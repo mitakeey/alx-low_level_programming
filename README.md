@@ -1,1 +1,1 @@
-#This is the last series of pointers, arrays and strings
+#This is a project series of pointers, arrays and strings
