@@ -1,1 +1,1 @@
-#This is a project series of pointers, arrays and strings
+# This is an alx recursion project
