@@ -2,12 +2,12 @@
 #include "holberton.h"
 
 /**
- * _strlen - find length of a string
- * @s1: string
- * @s2: string
- * Return: int , pointer
+ * str_concat - concatenates two strings
+ * @s1: first string
+ * @s2: second string
+ *
+ * Return: pointer to newly allocated space in memory, or NULL if error
  */
-
 
 int _strlen(char *s)
 {
