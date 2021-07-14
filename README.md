@@ -1,1 +1,1 @@
-# This is an extended pointers, arrays and strings project
+# This is a pointers, arrays and strings project
