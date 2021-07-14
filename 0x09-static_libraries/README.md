@@ -1,1 +1,1 @@
-#This is a statistic library project
+#This is a static library project
