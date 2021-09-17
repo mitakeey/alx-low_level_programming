@@ -1,37 +1,44 @@
 #include "lists.h"
+
 /**
- * delete_dnodeint_at_index - function deletes node at given position
- *
- *@head: pointer to pointer of head of linked list
- *@index: unsigned int index position
- *
+ * delete_dnodeint_at_index - deletes node at given idx
+ * @head: pointer to head of doubly linked list
+ * @index: index
  * Return: 1 if successful, -1 if failed
  */
-
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *temp, *next;
-	unsigned int i;
+	dlistint_t *del = NULL;
 
-	if (*head == NULL)
+	/* do nothing if nothing to delete */
+	if (head == NULL || *head == NULL)
 		return (-1);
 
-	temp = *head;
+	del = *head;
 
+	/* delete first node */
 	if (index == 0)
 	{
-		*head = temp->next;
-		temp->prev = NULL;
-		free(temp);
+		*head = (*head)->next;
+		free(del);
+		if (*head != NULL)
+			(*head)->prev = NULL;
 		return (1);
 	}
-	for (i = 0; temp != NULL && i < index - 1; i++)
-		temp = temp->next;
-	if (temp == NULL || temp->next == NULL)
-		return (-1);
 
-	next = temp->next->next;
-	free(temp->next);
-	temp->next = next;
-	return (1);
+	/* delete nth node as long as within range of list */
+	while ((index != 0) && (del->next != NULL))
+	{
+		index -= 1;
+		del = del->next;
+	}
+	if (index == 0)
+	{
+		del->prev->next = del->next;
+		if (del->next != NULL)
+			del->next->prev = del->prev;
+		free(del);
+		return (1);
+	}
+	return (-1);
 }
